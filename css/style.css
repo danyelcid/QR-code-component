@@ -32,7 +32,7 @@ body{
 
 
 .card{
-    max-width: 290px;
+    max-width: 280px;
     background-color: var(--clr-white);
     padding: 20px;
     border-radius: 20px;
