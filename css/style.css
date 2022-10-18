@@ -34,7 +34,7 @@ body{
 .card{
     max-width: 300px;
     background-color: var(--clr-white);
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
     text-align: center;
 }
