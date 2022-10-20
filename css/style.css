@@ -16,7 +16,7 @@
 body{
     font-family: 'Outfit', sans-serif;
     color: var(--clr-light-blue);
-    font-size: 15px;
+    font-size: 1rem;
 }
 .container{
     width: 90%;
@@ -32,18 +32,14 @@ body{
 .card{
     max-width: 280px;
     background-color: var(--clr-white);
-    padding: 15px 15px 20px 15px;
-    border-radius: 20px;
+    padding: .8rem .8rem 1.25rem .8rem;
+    border-radius: 1.25rem;
     text-align: center;
-}
-
-.card-image{
-    border-radius: 15px;
 }
 
 .card img{
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: .75rem;
 }
 
 .title{
@@ -55,7 +51,7 @@ body{
 
 .attribution { 
     position: fixed;
-    bottom: 10px;
+    bottom: .75rem;
     text-align: center;
     width: 100%;
     font-size: 11px; text-align: center; 
@@ -71,6 +67,6 @@ body{
         background-color: var(--clr-light-gray);
     }
     .card{
-        margin-inline: 15px;
+        margin-inline: 1rem;
     }
 }
