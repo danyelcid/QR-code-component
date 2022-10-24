@@ -16,12 +16,26 @@
     <img src="./images/image-qr-code.png" alt="">
     <h1 class="title">Improve your front-end skills by building projects.</h1>
     <p class="content">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
+    <label for="inverse" class="custom-checkbox-label">
+      <input type="checkbox" class="custom-checkbox" name="inverse" id="inverse">
+      <span class="custom-checkbox-span"></span>
+    </label>
+    <div class="attribution" role="contentinfo">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/danyelcid" target="_blank">Dany el Cid</a>.
+    </div>
   </div>
 </main>
   
-  <div class="attribution" role="contentinfo">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/danyelcid" target="_blank">Dany el Cid</a>.
-  </div>
+
+
+  <script src="./js/jquery-3.1.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#inverse').click( ()=>{
+        $('body').toggleClass('inverse');
+      })
+    })
+  </script>
 </body>
 </html>
