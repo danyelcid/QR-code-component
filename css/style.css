@@ -108,7 +108,7 @@ body.inverse{
 
 .custom-checkbox:checked + .custom-checkbox-span{
     border: 1px solid var(--clr-dark-purple);
-    box-shadow: 0 0 5px var(--clr-dark-purple);
+    box-shadow: 0 0 5px var(--clr-white);
 }
 .custom-checkbox:checked + .custom-checkbox-span::before{
     top: 2px;
