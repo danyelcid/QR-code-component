@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | QR code component</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-<main class="container">
-  <div class="card">
-    <img src="./images/image-qr-code.png" alt="">
-    <h1 class="title">Improve your front-end skills by building projects.</h1>
-    <p class="content">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
-    <label for="inverse" class="custom-checkbox-label">
-      <input type="checkbox" class="custom-checkbox" name="inverse" id="inverse">
-      <span class="custom-checkbox-span"></span>
-    </label>
-    <div class="attribution" role="contentinfo">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/danyelcid" target="_blank">Dany el Cid</a>.
+  <main class="container">
+    <div class="card">
+      <div class="card-img">
+        <img class="qr-image" src="./images/image-qr-code.png" alt="">
+        <img class="icon" src="./images/favicon-32x32.png" alt="">
+      </div>
+      <h1 class="title">Improve your front-end skills by building projects.</h1>
+      <p class="content">Scan the QR code to visit <strong>Frontend Mentor</strong> and take your coding skills to the
+        next level.</p>
+      <div class="mode-selector">
+        <label for="inverse" class="custom-checkbox-label">
+          <input type="checkbox" class="custom-checkbox" name="inverse" id="inverse">
+          <span class="custom-checkbox-span">
+            <ion-icon id="moon" title="Dark" name="moon-outline"></ion-icon>
+            <ion-icon id="sunny" title="Light" name="sunny-outline"></ion-icon>
+          </span>
+        </label>
+      </div>
+
+      <div class="attribution" role="contentinfo">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/danyelcid" target="_blank">Dany el Cid</a>.
+      </div>
     </div>
-  </div>
-</main>
-  
+  </main>
+
 
 
   <script src="./js/jquery-3.1.1.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
     $(document).ready(function () {
-      $('#inverse').click( ()=>{
+      $('#inverse').click(() => {
         $('body').toggleClass('inverse');
       })
     })
   </script>
 </body>
+
 </html>
