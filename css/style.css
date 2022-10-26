@@ -101,7 +101,7 @@ body.inverse{
     color: var(--clr-title-text);
     padding-block: .5rem;
     width: 100%;
-    font-size: .6rem; text-align: center; 
+    font-size: .7rem; text-align: center; 
 }
   .attribution a { 
     color: var(--clr-title-text); 
